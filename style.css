@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Roboto+Slab:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
 
 :root{
     --vermelho:#b5122b;
@@ -15,7 +15,7 @@
 body{
     background:var(--fundo);
     color:var(--texto);
-    font-family:'Libre Franklin',Arial,sans-serif;
+    font-family:'Poppins',Arial,sans-serif;
     line-height:1.65;
 }
 
@@ -32,6 +32,7 @@ body{
     font-family:'Roboto Slab',serif;
     font-size:1.55rem;
     font-weight:700;
+    letter-spacing:.02em;
 }
 
 .nav-link{
@@ -83,7 +84,7 @@ body{
 
 .btn-info:hover{background:var(--vermelho-escuro);color:#fff}
 
-h2,h3,h4,h5{font-family:'Roboto Slab',Georgia,serif;color:var(--azul)}
+h1,h2,h3,h4,h5{font-family:'Roboto Slab',Georgia,serif;color:var(--azul)}
 h2{font-size:2rem;font-weight:700;margin-bottom:22px}
 h2::after{content:'';display:block;width:45px;height:3px;background:var(--vermelho);margin-top:10px}
 
@@ -237,6 +238,14 @@ footer h4,footer h5{color:#fff}footer p,footer a,footer small{color:#d5dde2}foot
     .equipe-card{grid-template-columns:1fr}
     .equipe-card img{height:220px}
 }
+
+.info-grid{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
+.info-box{background:#fff;border:1px solid var(--linha);border-top:4px solid var(--vermelho);box-shadow:0 2px 8px rgba(0,0,0,.06);padding:28px 24px}
+.info-box h3{color:var(--azul);font-size:1.35rem;margin-bottom:12px}
+.info-box p{color:var(--cinza);margin:0}
+.info-list{color:var(--cinza);list-style:none;padding:0;margin:22px 0 0}
+.info-list li{margin:10px 0;padding-left:26px;position:relative}
+.info-list li::before{content:'✓';color:var(--vermelho);left:0;position:absolute;top:0}
 
 /* Página Aplicações */
 .conteudo-banner h1{
